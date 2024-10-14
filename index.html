@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--a slash and star within the style tag indicates a comment and wont affect the code.-->
+<head>
+    <title>Email Marketing Template</title>
+    <!--IF YOU WOULD LIKE TO CUSTOMIZE THE FOOTER BACKGROUND COLOR YOU WOULD NEED TO FIND SOCIAL MEDIA ICONS WITH THE SAME BACKGROUND COLOR AND REPLACE THE ONES IN 
+    PLACE NOW. OR ALTERNATIVELY YOU COULD TRY AND FIND ICONS WITH A TRANSPARENT BACKGROUND.
+
+    WHEN CHANGING AN IMAGE YOU NEED TO ADJUST ITS WIDTH AND HEIGHT BECAUSE NOT ALL IMAGES HAVE THE SAME FORMAT AND NOT ALL IMAGES WITH HAVE THE SAME DIMENSIONS.
+    
+    THIS TEMPLATE IS FULLY RESPONSIVE TO BASICALLY ALL SCREEN SIZE DONT NOT CHANGE MEDIA QUERIES DESIGNS UNLESS YOU ARE A DEVELOPER OR YOU KNOW HOW TO .
+    
+    IF YOU WOULD LIKE TO ADD MORE CSS FEATURES GOOGLE CSS STYLES AND YOU'LL BE GIVEN STYLES TO CHANGE THE LOOK OF YOUR TEMPLATE,NOTE THAT THESE CHANGES MIGHT AFFECT 
+    THE TEMPLATE DESIGN SO DO THIS AT YOUR OWN RISK
+    
+    IF YOU CHANGE THE FOOTER COLOR, YOU WILL NEED TO FIND AN APPROPRIATE SOCIAL MEDIA ICON WITH THE SAME BACKGROUND COLOR, 
+    YOU CAN GOOGLE THESE WEBSITES TO FIND WHAT YOU LOOKING FOR .
+    Iconfinder: A large database of high-quality icons, including social media icons, many of which are available in transparent PNG format.
+    Flaticon: Offers a wide variety of social media icons in different styles and sizes, available for free with attribution or as part of a paid plan.
+    Icons8: Provides free social media icons with the option to download them in various formats and sizes. Premium options are also available.
+    Freepik: A resource for social media icons along with other graphic assets. Icons are available in different formats, including PNG with transparency.
+    Pngtree: Offers a wide selection of social media icons in PNG format, often used for web design and digital projects.-->
+
+    <!-- BEFORE REPLACING CONTENT: Customize styles like font, font-size, and colors. This ensures that the content matches the style adjustments mentioned in the comments below.(RECOMMENDED) -->
+    <style>
+
+            /* 
+    FONT USAGE GIDELINES:
+
+    1. **Primary Fonts**:
+    - **Heading Font**: 'Helvetica Neue', 'Arial', sans-serif
+        - Use this for main headings and important text.
+        - Example: font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    - **Alternate Heading Font**: 'Roboto', sans-serif
+        - An alternative for headings if 'Helvetica Neue' is not available.
+        - Example: font-family: 'Roboto', sans-serif;
+
+    2. **Body Fonts**:
+    - **Primary Body Font**: 'Georgia', serif
+        - Ideal for body text and general content.
+        - Example: font-family: 'Georgia', serif;
+    - **Alternate Body Font**: 'Times New Roman', serif
+        - Use this if 'Georgia' is not available.
+        - Example: font-family: 'Times New Roman', serif;
+
+    3. **Secondary Fonts**:
+    - **Accent Font**: 'Verdana', sans-serif
+        - Use for small text and additional styling.
+        - Example: font-family: 'Verdana', sans-serif;
+    - **Alternative Accent Font**: 'Trebuchet MS', sans-serif
+        - Another option for accent text.
+        - Example: font-family: 'Trebuchet MS', sans-serif;
+
+    4. **Special Fonts**:
+    - **Monospace Font**: 'Courier New', monospace
+        - Use for code snippets or fixed-width text.
+        - Example: font-family: 'Courier New', monospace;
+    - **Decorative Font**: 'Comic Sans MS', cursive, sans-serif
+        - Use sparingly for decorative elements.
+        - Example: font-family: 'Comic Sans MS', cursive, sans-serif;*/
+
+
+
+        /* Animation for the first heading ("Hi There"). Remove this section if you don't want the heading to animate. */
+        .first-heading {
+            animation:heading-rotate 6s;
+            animation-iteration-count: infinite;
+
+        }
+
+       /* Keyframes for the heading animation. Remove this if you removed the animation above. */
+        @keyframes heading-rotate {
+            0%, 100% {
+            transform: rotateY(0deg);
+            }
+            50% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+
+
+        /* Call-to-action paragraph below the "Hi There" heading. 
+           Customize the font size and type here. 
+           (Affects content between the <p> tags, which you can customize later.)
+            If you want to change the color you color remove the slash and star and choose your color 
+            same with the background color of the text*/
+        .call-to-action p{
+            font-size:19px; 
+            font-family:'Times New Roman', serif;
+            /*color: type color option here;*/
+            /*background-color:red;*/
+        }
+
+        /* Customize the font size for the paragraphs under "What's New" 
+           These are the text sections that describe each headline. 
+           (Update the style before modifying content between <p> tags in the corresponding section.) */
+            /*remove the slash and star from the color option if you would like to change the color of this parahraph. do the same thing with the font if applicable*/
+        .headlines .points .headline-placeholders p {
+            font-size:17px;
+            /*color:type color option here; */      
+            /*font-family:font here;*/ 
+            /*background-color:silver;*/
+        }
+
+        /* Customize the font size for the headlines under "What's New" 
+           These are the main titles of each section. 
+           (Update the style here before changing the headline content.)
+           Customize background color and the color of the text, i've added placeholders for that */
+        .headlines .points .headline-placeholders h3{
+            font-size:23px;
+            /*color:color here;*/
+            /*background-color:color here;*/
+            /*font-family:font here;*/
+            margin:0;
+        }
+
+        /* Customize contact info under the "Contact" heading in the footer.(Does not Customize contact heading)*/
+        .footer .information .contact p{
+            font-family:Arial, sans-serif; 
+            font-size:15px; 
+            color:#222222;
+            /*background-color:color here;*/
+        }
+
+
+        /*Customize links under "About us" heading in the footer. (does not customize About us heading.)*/
+        .footer .information .about-us p{
+            font-family:Arial, sans-serif; 
+            font-size:15px; 
+            color:#222222;
+            /*background-color:color here;*/
+        }
+
+
+        /*Customize contact information heading in footer ("Contact")*/
+        .footer .information .contact h4{
+            font-family:Helvetica, sans-serif;
+            font-size:16px;
+            /*background-color:color here;*/
+            /*color:color here */
+        }
+
+        /*Customize more links  heading in footer ("More Links")*/
+        .footer .information .more h4{
+            font-family:Helvetica, sans-serif;
+            font-size:16px;
+            /*background-color:color here;*/
+            /*color:color here*/
+        }
+
+        /*Customize About Us heading in footer ("About Us")*/
+        .footer .information .about-us h4{
+            font-family:Helvetica, sans-serif;
+            font-size:16px;
+            /*background-color:color here;*/
+            /*color:color here*/
+        }
+
+        
+        /*Customize the action button named appropriately to see easily*/
+        .action-button button[name="action-but"]{
+            cursor:pointer; 
+            border-radius:8px; 
+            box-shadow:2px 2px 2px red;
+            font-family:'Times New Roman', serif;
+            font-size:25px;
+            background-color:#570000;
+             color:#e0dada;
+            
+        }
+        
+        /*Customize the action button's hover feature if you wouuld like to change it */
+        .action-button button[name="action-but"]:hover {
+            color:#570000;
+            background-color: white;
+            box-shadow:2px 2px 2px blue;
+        }
+
+        /*leave this as is unless you change the footer background*/
+        .footer .socials button[name="facebook"] {
+            background-color:#b19eff; 
+            border: none;
+            cursor:pointer;
+            /*color:color here*/
+            
+        }
+
+        /*Customize Facebook hover feature*/
+        .footer .socials button[name="facebook"]:hover {
+            border-bottom:1px solid black;
+        }
+
+
+        /*leave this as is unless you change the footer background*/
+        
+        .footer .socials button[name="instagram"]{
+            background-color:#b19eff; 
+            border: none;
+            cursor:pointer;
+
+        }
+
+        /*Customize Instagram hover feature*/
+        .footer .socials button[name="instagram"]:hover{
+            border-bottom:1px solid black;
+        }
+
+        /*leave this as is*/
+        .footer .socials button[name="x"]{
+            background-color:#b19eff; 
+            border: none;
+            cursor:pointer;
+        }
+
+        /*Customize X(Twitter) hover feature*/
+        .footer .socials button[name="x"]:hover{
+            border-bottom:1px solid black;
+            /*background-color:color here;*/
+            /*color: color here;*/
+        }
+
+        /*leave this as is UNLESS CHANGING THE FOOTER BACKGROUND AFFECTS THIS  */
+        .footer .socials button[name="linkedin"]{
+            background-color:transparent; 
+            border: hidden;
+            cursor:pointer;
+            
+
+        }
+
+        /*Customize Tik Tok hover feature*/
+        .footer .socials button[name="linkedin"]:hover{
+            border-bottom:1px solid black;
+            /*background-color:color here;*/
+            /*color: color here;*/
+        }
+
+        /*DO NOT CHANGE THIS */
+        /*displays socials in a row form instead of a column. dont recommend changing this*/
+        .footer .socials {
+            display:flex; 
+            flex-direction:row; 
+            
+            
+        }
+
+        /*Customize link buttons under "More links" heading in the footer*/
+        .footer .more .links button[name="link"]{
+            background-color:transparent;
+            border:hidden;
+            font-family:Arial, sans-serif;
+            font-size:15px;
+            color:#222222;
+            cursor:pointer;
+        }
+
+        /*hover feature for more links buttons*/
+        .footer .more .links button[name="link"]:hover{
+            border-bottom:1px solid black;
+            /*background-color:color here;*/
+            /*color:color here;*/
+        }
+
+        /*Customize "Learn more about us" button under "about us" heading */
+        .footer .about-us button[name="about"]{
+            background-color:transparent;
+            border:none;
+            border-bottom:1px solid black; 
+            cursor:pointer;
+        }
+        
+        /*hover feature for "Learn more about us' button*/
+        .footer .about-us button[name="about"]:hover{
+            color:rgb(126, 242, 255);
+            /*background-color:color here;*/
+        }
+
+        /*All media queries for a Fully Responsive design */
+        @media only screen and (max-width:620px){
+            .call-to-action p{
+                font-size:15px;
+            }
+
+            .headlines .second-heading h2{
+                font-size:32px;
+            }
+            .headlines .points .headline-placeholders p{
+                font-size:15px ;
+            }
+
+            .footer .information .contact p{
+                font-size:13px;
+            }
+            .footer .information .more .links a{
+                font-size:13px;
+            }
+            .footer .information .about-us p{
+                font-size:13px;
+            }
+
+            
+        }
+
+        @media only screen and (max-width:506px){
+            .footer .information .contact p{
+                width:60% !important;
+            }
+            .footer .information .more p{
+                width:60% !important;
+            }
+            .footer .information .about-us p{
+                width:60% !important;
+            }
+        }
+
+
+        @media only screen and (max-width:520px){
+            .top-header .logos img{
+                width:200px;
+                height:200px;
+            }
+
+            .image1 img {
+                height:70vh;
+            }
+
+            .headlines .points .headline-placeholders p{
+                font-size:12px;
+            }
+
+            .headlines .points img{
+                width:100px;
+                height:100px;
+            }
+            .footer .information .contact h4{
+                font-size:15px;
+            }
+            .footer .information .more h4{
+                font-size:15px;
+            }
+            .footer .information .about-us h4{
+                font-size:15px;
+            }
+
+            
+            
+        }
+
+        @media only screen and (max-width:450px){
+
+            .footer{
+                height:110vh !important;
+            }
+            .footer .information{
+                gap:0px !important;
+                flex-direction:column !important;
+                
+            }
+        }
+
+        @media only screen and (max-width:420px){
+            .top-header .logos img{
+                width:150px;
+                height:150px;
+            }
+
+            .first-heading h{
+                font-size:35px;
+            }
+            .call-to-action p{
+                font-size:13px;
+            }
+
+            .action-button button[name="action-but"]{
+                font-size:18px;
+            }
+
+            .image1 img {
+                height:60vh;
+            }
+
+            .headlines .second-heading h2{
+                font-size:30px;
+
+            }
+
+            .headlines .points .headline-placeholders h3{
+                font-size:20px;
+            }
+
+            .footer .socials button[name="facebook"] img{
+                width:50px;
+                height:50px;
+            }
+
+            .footer .socials button[name="instagram"] img{
+                width:50px;
+                height:50px;
+            }
+
+            .footer .socials button[name="x"] img{
+                width:50px;
+                height:50px;
+            }
+
+            .footer .socials button[name="linkedin"] img{
+                width:50px;
+                height:50px;
+            }
+
+
+
+        }
+
+        @media only screen and (max-width:320px){
+            .top-header .logos img{
+                width:130px;
+                height:130px;
+            }
+
+            .first-heading h{
+                font-size:30px;
+            }
+
+            .call-to-action p{
+                font-size:12px;
+            }
+
+            .action-button button[name="action-but"]{
+                font-size:16px;
+            }
+
+            .image1 img{
+                height:50vh;
+            }
+
+            .headlines .second-heading h2{
+                font-size:25px;
+            }
+            .headlines .points .headline-placeholders p{
+                font-size:10px;
+            }
+            .footer .socials{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 columns */
+                grid-template-rows: repeat(2, auto);   /* 2 rows */
+                gap: 10px; /* Adjust gap between items */
+                justify-items: center; /* Center items horizontally */
+                align-items: center; 
+            }
+
+            .footer .socials button[name="tiktok"]{
+                margin-left:2px;
+            }
+        }
+
+        @media only screen and (max-width:262px){
+            .headlines .second-heading h2{
+                font-size:20px;
+            }
+
+            .headlines .points .headline-placeholders h3{
+                font-size:18px;
+            }
+
+            .footer{
+                height:120vh !important;
+            }
+        }
+
+
+        
+    </style>
+</head>
+
+
+<!--here you can change the background color of the whole page in the appropriate styling below-->
+<body width="100%" height="100vh" style="background-color:#e0dada; justify-content:center;">
+    <!--here you can change the bottom border color example bottom-border:1px solid red;-->
+    <div class="top-header" width="100%" style="display:flex; justify-content:center; border:none; border-bottom:1px solid black; text-align:center;">
+
+    <!--
+        Instructions for Replacing Images:
+
+        1. **Upload Your Image:**
+        - Go to [Imgur](https://imgur.com/) and upload your image.
+        
+        2. **Get the Direct Image Link:**
+        - After uploading, open the image in a new tab by clicking on it.
+        - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+        - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+        3. **Replace the Image Source:**
+        - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+        Example:
+        <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+        
+        -->
+
+        <!--class to store the logos at the top -->
+        <div class="logos">
+            <!--
+            INSTRUCTIONS FOR REPLACING THE IMAGES:
+
+            1. **Upload Your Image:**
+                - Go to [Imgur](https://imgur.com/) and upload your image.
+                
+            2. **Get the Direct Image Link:**
+                - After uploading, open the image in a new tab by clicking on it.
+                - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+                - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+            3. **Replace the Image Source:**
+                - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+            Example:
+            <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+            OR
+            replace the src with image you want example: <img src="image_path.PNG" > and change width and height as needed, BUT I RECOMMEND 
+            YOU DO IT WITH THE DIRECT IMAGE LINK-->
+            <!--delete one if you only need one-->
+            <img src="https://imgur.com/MMd16Bb.png" alt="first logo placeholder" width='250px' height='250px'>
+            <img src="https://imgur.com/frg48Ky.png" alt="second logo placeholder" width="250px" height='250px'>
+        </div>
+
+    </div>
+
+    <div class="first-heading" style="font-size:50px;text-align:center;color:#570000;"  >
+        <!--Replace heading between the <h></h> element to whatever you want -->
+        <h>Hi There!</h>
+    </div>
+
+    <!--do not change this, colors and fonts for the call to action should be customized in the style tag-->
+    <div class="call-to-action" style="width:55%;margin:0 auto;">
+        <!--replace paragraph between the <p></p> tags with your call to action. -->
+        <p >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce nisi enim, vulputate at justo tristique.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p><br><br>
+        <p >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce nisi enim, vulputate at justo tristique. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        
+    </div><br>
+
+    <!--DO NOT CHANGE AN DIV STYLES -->
+    <div class="action-button" style="display:flex; justify-content:center;">
+        <!--replace "Action Button" with appropriate action-->
+        <a href="https://www.example.com"><button type="button" name="action-but" id="call-to-action-button"  >Action Button</button></a>
+    </div><br>
+
+    <!--DO NOT CHANGE AN DIV STYLES -->
+    
+
+    <!--
+        INSTRUCTIONS FOR REPLACING THE IMAGES:
+
+        1. **Upload Your Image:**
+            - Go to [Imgur](https://imgur.com/) and upload your image.
+            
+        2. **Get the Direct Image Link:**
+            - After uploading, open the image in a new tab by clicking on it.
+            - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+            - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+        3. **Replace the Image Source:**
+            - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+        Example:
+        <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+        OR
+        image under the Action Button replace as follows: src="image_Path.jpg" and Customize height and width accordingly. (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)
+        another method to replace the image would be to put it in the same file as the web template/page and uusing its name example: src="image_name.jpg" (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)-->
+    <div class="image1"  style="display:flex; justify-content:center; ">
+        <img src="https://imgur.com/b3qH8Ac.jpeg" alt="image corresponding with email purpose(first promotional image )" height="500vh" width="80%">
+    </div>
+
+    <!--DO NOT CHANGE AN DIV STYLES -->
+    <div class="headlines" width="100%" style=" display:flex;  align-items:center;flex-direction:column;">
+        <div class="second-heading" style=" width:50%;font-size:35px; display:flex; justify-content:center;" >
+            <!--Replace "whats new with youur own heading between the h2 tag"-->
+            <h2>
+                Whats New
+            </h2>
+        </div>
+
+        <div class="points" style="display:flex;  flex-direction:row; gap:30px;justify-content:center; width:80%; ">
+            
+            <!--
+        INSTRUCTIONS FOR REPLACING THE IMAGES:
+
+        1. **Upload Your Image:**
+            - Go to [Imgur](https://imgur.com/) and upload your image.
+            
+        2. **Get the Direct Image Link:**
+            - After uploading, open the image in a new tab by clicking on it.
+            - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+            - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+        3. **Replace the Image Source:**
+            - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+        Example:
+        <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+        OR
+        image under the Action Button replace as follows: src="image_Path.jpg" and Customize height and width accordingly. (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)
+        another method to replace the image would be to put it in the same file as the web template/page and uusing its name example: src="image_name.jpg" (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)-->
+            <img src="https://imgur.com/uOlP3s0.jpeg" alt="Healine 1 image" height="135px" width="135px"  >
+            <div class="headline-placeholders" style="display:flex; flex-direction:column; width:50%;" >
+                <!--replace the headline between the h3 tag-->
+                <h3>
+                    Headline
+                </h3>
+                <!--Customize the paragraph by placing it in the place of this one between the p tag-->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce nisi enim, vulputate at justo tristique. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            
+        </div><br><br>
+        <!--DO NOT CHANGE AN DIV STYLES -->
+        <div class="points" style="display:flex;  flex-direction:row; gap:30px;justify-content:center; width:80%;">
+            <!--
+        INSTRUCTIONS FOR REPLACING THE IMAGES:
+
+        1. **Upload Your Image:**
+            - Go to [Imgur](https://imgur.com/) and upload your image.
+            
+        2. **Get the Direct Image Link:**
+            - After uploading, open the image in a new tab by clicking on it.
+            - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+            - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+        3. **Replace the Image Source:**
+            - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+        Example:
+        <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+        OR
+        image under the Action Button replace as follows: src="image_Path.jpg" and Customize height and width accordingly. (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)
+        another method to replace the image would be to put it in the same file as the web template/page and uusing its name example: src="image_name.jpg" (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)-->
+            <img src="https://imgur.com/uOlP3s0.jpeg" alt="headline 2 image" height="135px" width="135px">
+            <div class="headline-placeholders" style="display:flex; flex-direction:column; width:50%;" >
+                <!--replace the headline between the h3 tag-->
+                <h3>
+                    Headline
+                </h3>
+                <!--Customize the paragraph by placing it in the place of this one between the p tag-->
+                <p >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce nisi enim, vulputate at justo tristique. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div><br><br>
+
+        <!--DO NOT CHANGE AN DIV STYLES -->
+        <div class="points" style="display:flex;  flex-direction:row; gap:30px;justify-content:center; width:80%;">
+
+            <!--
+        INSTRUCTIONS FOR REPLACING THE IMAGES:
+
+        1. **Upload Your Image:**
+            - Go to [Imgur](https://imgur.com/) and upload your image.
+            
+        2. **Get the Direct Image Link:**
+            - After uploading, open the image in a new tab by clicking on it.
+            - Right-click on the image and select "Open image in new tab" (or a similar option depending on your browser).
+            - Copy the URL from the address bar of the new tab. This URL is your direct link to the image.
+
+        3. **Replace the Image Source:**
+            - Replace the `src` attribute in the `<img>` tag below with the direct image link you copied.
+
+        Example:
+        <img src="https://i.imgur.com/your-image-id.png" alt="Your image description" width="250px" height="250px">
+        OR
+        image under the Action Button replace as follows: src="image_Path.jpg" and Customize height and width accordingly. (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)
+        another method to replace the image would be to put it in the same file as the web template/page and uusing its name example: src="image_name.jpg" (DONT RECOMMEND THIS, MIGHT CAUUSE ISSUES ON DIFFERENT DEVICES)-->
+            <img src="https://imgur.com/uOlP3s0.jpeg" alt="third headline image"height="135px" width="135px">
+            <div class="headline-placeholders" style="display:flex; flex-direction:column; width:50%;" >
+                <h3 style="margin:0; font-size:23px;">
+                    <!--replace the headline between the h3 tag-->
+                    Headline
+                </h3>
+                <!--Customize the paragraph by placing it in the place of this one between the p tag-->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce nisi enim, vulputate at justo tristique. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+        </div><br>
+    </div>
+
+       
+    <footer >
+        <!--leave footer style as is-->
+        <div class="footer"   style="width:100%;height:70vh;background-color:#b19eff; display:flex; align-items:center; flex-direction:column;">
+            <div class="socials" >
+                <!--leave this as is-->
+                <!--only replace href links with social media links, delete -->
+                <button type="button" name="facebook"><a href="https://www.example.com"><img src="https://imgur.com/CK2ePqv.png" alt="Facebook link" width="60px" height="60px;"></a></button>
+                <button type="button" name="instagram"><a href="https://www.example.com"><img src="https://imgur.com/ScKLkEz.png" alt="Instagram link" width="60px" height="60px"></a></button>
+                <button type="button" name="linkedin"><a href="https://www.example.com"><img src="https://imgur.com/VC9HpTo.png" alt="LinkedIn link" width="60px" height="60px"></a></button>
+                <button type="button" name="x"><a href="https://www.example.com" ><img src="https://imgur.com/HuU2Jte.png" alt="x(twitter) link" width="60px" height="60px"></a></button>
+            </div><br>
+            <!--DO NOT CHANGE AN DIV STYLES -->
+            <div class="information" style="display:flex; flex-direction:row; gap:50px;">
+                <div class="contact"style="width:80%;" >
+                    <!--change content where applicable between the tags-->
+                    <h4><strong>Contact Info</strong></h4><!--REMVOVE THE <STRONG> TAG IF YOU DONT WANT IT BOLD. you CAN ADD <i></i> to change it to italics-->
+                    <p>Email: something@email.com </p>
+                    <p>Phone: 021 406 1772</p>
+                    <p>Address: 00 address street, area name, city name.  </p>
+                </div>
+                <!--DO NOT CHANGE AN DIV STYLES -->
+                <div class="more" style="width:80%;">
+                    <h4><strong>More Links</strong></h4><!--REMVOVE THE <STRONG> TAG IF YOU DONT WANT IT BOLD.you CAN ADD <i></i> to change it to italics-->
+                    <div class="links">
+                        <!--change links in the href section example: href="https://webpage.here"-->
+                        <!--delete links if not applicable or Customize link names by replacing the content between the tags."Latest News, Any Questions,
+                            Privacy and Policies, FAQ'S"-->
+                        <a href="https://www.example.com"><p><button type="button" name="link">Latest News</button></p></a>
+                        <a href="https://www.example.com"><p><button type="button" name="link"><a>Any Questions</button></p></a>
+                        <a href="https://www.example.com"><p><button type="button" name="link">Privacy and Policies</button></p></a>
+                        <a href="https://www.example.com"><p><button type="button" name="link">FAQ'S</button></p></a>
+                        
+                    </div>
+                </div>
+                <!--DO NOT CHANGE AN DIV STYLES -->
+                <div class="about-us" style="width:80%;">
+                    <!--ABOUT US HEADING CUSTOMIZE CONTENT IF NEEDED -->
+                    <h4 ><strong>About us</strong></h4><!--REMVOVE THE <STRONG> TAG IF YOU DONT WANT IT BOLD. you CAN ADD <i></i> to change it to italics-->
+                    <p>description of your business aims/ company goals and what your company/technology is about</p>
+                    <!--Learn more about us link add link in place of the example link. example: href="https://webpage.here"-->
+                    <a href="https://www.example.com"><button type="button" name="about">Learn More About Us</button></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+            
+</body>
+
+</html>
